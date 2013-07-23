@@ -4,26 +4,17 @@ Docpls
 Make me a LaTeX document fast (pls.) Quick articles and reports
 Includes a Makefile for installing stuff, building pdfs and cleaning up.
 
-    cd ~/Documents
-    mkdir mydoc
-    git clone https://github.com/nnog/docpls.git
-    cp docpls/Makefile mydoc/
-    cp docpls/doc.tex mydoc/
+    git clone https://github.com/nnog/docpls.git mydoc
+    cd !$
 
 If you dont have tex installed:
 
     make install
     
-Edit your document. To make a pdf:
+Edit your document. Remove other templates you don't need. (And this README I guess) then simply:
 
     make
 
-If you are using Bibtex:
+Easy!
 
-    make pdfbib
-
-To clean up:
-
-    make clean
-
-Quick quick gogogo make your document!
+Note: the default make rule builds, cleans and views the PDF (evince by default, change in Makefile if using something else.) The individual rules are: pdf, pdfbib, view, clean, cleanall.
