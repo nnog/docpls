@@ -1,0 +1,23 @@
+\documentclass[]{report}
+
+\title{Long Report}
+\author{George Cockshull}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\tableofcontents
+
+\chapter{Introduction}
+
+\section{Heading}
+I am citing something\cite{knuth}.
+
+
+\begin{thebibliography}{99}
+  \bibitem{knuth} Knuth, D.E. Manual on etc., 1985
+\end{thebibliography}
+
+\end{document}
+
