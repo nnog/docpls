@@ -18,7 +18,7 @@ pdf:
 	$(PDF) && $(PDF)
 
 view:
-	$(VIEWER) $(SRC).pdf
+	$(VIEWER) $(SRC).pdf & 
 
 clean:
 	-@rm *.bbl *.aux *.blg *.dvi *.log *.ps *.toc *.ilg *.lof *.lot *.lol *.idx 2>/dev/null
