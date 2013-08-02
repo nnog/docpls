@@ -21,7 +21,7 @@ view:
 	$(VIEWER) $(SRC).pdf & 
 
 clean:
-	-@rm *.bbl *.aux *.blg *.dvi *.log *.ps *.toc *.ilg *.lof *.lot *.lol *.idx 2>/dev/null
+	-@rm *.bbl *.aux *.blg *.dvi *.log *.ps *.toc *.ilg *.lof *.lot *.lol *.idx *.out 2>/dev/null
 
 cleanall: clean
 	-@rm *.pdf 2>/dev/null
